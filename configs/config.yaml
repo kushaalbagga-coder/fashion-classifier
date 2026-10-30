@@ -1,0 +1,16 @@
+data:
+  root: data
+  image_size: 224
+  batch_size: 32
+  num_workers: 2
+model:
+  name: efficientnet_b0
+  dropout: 0.3
+training:
+  epochs: 15
+  finetune_after_epoch: 5
+  lr_head: 0.001
+  lr_finetune: 0.00005
+  weight_decay: 0.0001
+  device: auto
+  best_model: models/best_model.pth
