@@ -58,6 +58,8 @@ Run the interactive UI in another terminal:
 streamlit run app\streamlit_app.py
 ```
 
+The interface includes a sample gallery using the downloaded test images, as well as an upload workspace for side-by-side comparison of up to four images. Use the sidebar to choose how many likely categories to show, set a low-confidence indicator, hide previews, or toggle the comparison chart. Download a CSV style report from each result.
+
 The Python API can also be used directly:
 
 ```python

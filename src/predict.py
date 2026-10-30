@@ -29,6 +29,7 @@ class FashionClassifier:
 
         self.class_names = class_names or checkpoint.get("class_names") or DEFAULT_CLASSES
         self.model_name = checkpoint.get("model_name", "efficientnet_b0")
+        self.val_accuracy = checkpoint.get("val_accuracy")
         image_size = size or checkpoint.get("image_size", 224)
         state = checkpoint.get("model_state", checkpoint)
         self.model = build_model(
